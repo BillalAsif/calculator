@@ -12,6 +12,16 @@ body {
     margin-top: 2rem;
     grid-template-columns: repeat(4, 6rem);
     grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    justify-content:center;
+}
+
+.calculator-grid > button {
+    background-color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+.calculator-grid > button:hover, 
+.calculator-grid > button:focus {
+    background-color:rgba(94, 83, 83, 0.9);
 }
 
 .span-two {
@@ -21,4 +31,22 @@ body {
 .output {
     grid-column: 1 / -1;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-wrap: break-all;
+    padding: 1rem;
 }
+
+.output .previous-operand {
+    color:aliceblue;
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color:white;
+    font-size: 2.5rem;
+}
+
